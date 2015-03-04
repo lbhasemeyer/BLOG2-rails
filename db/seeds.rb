@@ -22,3 +22,21 @@ title: Faker::Lorem.sentence,
 body: Faker::Lorem.paragraphs.join("\n\n"),
 user: user2
 )
+
+comment1 = Comment.create!(
+body: Faker::Lorem.sentence,
+post: post2,
+user: user3
+)
+
+comment2 = Comment.create!(
+body: Faker::Lorem.sentence,
+post: post2,
+user: user3
+)
+
+comment3 = Comment.create!(
+body: Faker::Lorem.sentence,
+post: post3,
+user: user3
+)
