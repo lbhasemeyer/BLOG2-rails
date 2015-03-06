@@ -2,9 +2,9 @@ class PostsController < ApplicationController
 
   def index
     if params[:find]
-      @filtered = Post.where("title like ? OR body like ?",
-      "%#{ params[:find] }%", "%#{ params[:find] }%")
-      render json: @filtered
+      puts "in the index!!!!!!"
+      render json: Post.where("title like ? OR body like ?", "%#{ params[:find] }%", "%#{ params[:find] }%")
+      puts "in the index!!!!!! END"
     else
       @posts = Post.all
       render json: @posts
@@ -43,6 +43,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :user_id)
   end
+
 end
