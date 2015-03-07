@@ -2,9 +2,7 @@ class PostsController < ApplicationController
 
   def index
     if params[:find]
-      puts "in the index!!!!!!"
       render json: Post.where("title like ? OR body like ?", "%#{ params[:find] }%", "%#{ params[:find] }%")
-      puts "in the index!!!!!! END"
     else
       @posts = Post.all
       render json: @posts
