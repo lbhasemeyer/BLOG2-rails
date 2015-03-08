@@ -14,7 +14,7 @@ user: user1
 
 post2 = Post.create!(
 title: "Small Kangaroo",
-body: "There once was a girl who went on a walk through the woods.  She stopped to touch every flower she saw.  After an hour or two she stumbled upon Mr. Wallaby.",
+body: "A sloth was robbed by a turtle.  When asked to describe the event, he could only reply 'I don't know...it all happened so fast...'",
 user: user2
 )
 
