@@ -8,16 +8,16 @@ Rails version: 4.2.0
 Ruby version: 2.1.5p273
 
 
-## Installation
+##Installation
 
 * `git clone <repository-url>` this repository
 * change into the new directory
 * bundle install
 
-## Running / Development
+##Running / Development
 * rails s to start a server
 * Visit the app at http://localhost:3000/posts
 
-## Heroku
+##Heroku
 
 You can see this backend live at https://blog-of-many-posts.herokuapp.com/posts
