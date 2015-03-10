@@ -2,7 +2,7 @@
 
 Heroku website: https://blog-of-many-posts.herokuapp.com/posts
 Rails version: 4.2.0
-Ruby version: 2.1.5p273
+Ruby version: 2.1.5p273  
 
 This is the back-end to the Blog of Many Posts.  It serves JSON to an
 mber.js front-end (called BLOG2-ember in my github).
